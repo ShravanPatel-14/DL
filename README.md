@@ -1,7 +1,7 @@
 # Fashion MNIST Classification
 
 ## Overview
-This repository contains a Jupyter Notebook that implements a classification model for the Fashion MNIST dataset. The Fashion MNIST dataset is a collection of grayscale images representing 10 different clothing categories. The goal of this project is to build and evaluate a machine learning model to accurately classify these images.
+This repository contains a Jupyter Notebook that implements a deep learning classification model for the Fashion MNIST dataset. The Fashion MNIST dataset is a collection of grayscale images representing 10 different clothing categories. The goal of this project is to build and evaluate a deep learning model to accurately classify these images.
 
 ## Dataset
 - **Fashion MNIST**: A dataset of 28x28 grayscale images of 10 different fashion categories.
@@ -58,4 +58,6 @@ jupyter notebook FMNIST.ipynb
 ## Contributing
 Feel free to fork this repository, submit pull requests, or report issues for improvements.
 
+## License
+This project is licensed under the MIT License.
 
