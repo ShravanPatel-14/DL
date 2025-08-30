@@ -1,63 +1,56 @@
-# Fashion MNIST Classification
+# Deep Learning Projects
 
 ## Overview
-This repository contains a Jupyter Notebook that implements a deep learning classification model for the Fashion MNIST dataset. The Fashion MNIST dataset is a collection of grayscale images representing 10 different clothing categories. The goal of this project is to build and evaluate a deep learning model to accurately classify these images.
+This repository contains multiple Jupyter Notebooks showcasing various **TensorFlow-based deep learning models** applied to different datasets, including classification and regression tasks. Each project involves data preprocessing, model building, training, evaluation, and prediction.
+This repository contains multiple Jupyter Notebooks showcasing various **TensorFlow-based deep learning models** applied to different datasets, including classification and regression tasks.
 
-## Dataset
-- **Fashion MNIST**: A dataset of 28x28 grayscale images of 10 different fashion categories.
-- **Labels**:
-  - 0: T-shirt/top
-  - 1: Trouser
-  - 2: Pullover
-  - 3: Dress
-  - 4: Coat
-  - 5: Sandal
-  - 6: Shirt
-  - 7: Sneaker
-  - 8: Bag
-  - 9: Ankle boot
+## Included Notebooks
 
-## Requirements
-Ensure you have the following dependencies installed before running the notebook:
+1. **House Price Prediction (`tensorflow-neuralnetwork-houseprice.ipynb`)**
+   - Uses a neural network to predict house prices based on multiple features.
 
+2. **Superstore Sales Prediction (`Global_superstore_neural.ipynb`)**
+   - Implements a neural network model to analyze and predict sales trends in the Global Superstore dataset.
+
+3. **Multi-class Classification (`Tensorflow_multicls_classification.ipynb`)**
+   - Trains a deep learning model to classify multiple categories using TensorFlow.
+
+4. **Binary Classification (`Tensorflow_Binarycls_classification.ipynb`)**
+   - Implements a binary classification neural network for distinguishing between two classes.
+
+## Dependencies
+Ensure you have the following libraries installed:
 ```bash
-pip install numpy pandas matplotlib tensorflow keras
+pip install numpy pandas matplotlib seaborn tensorflow scikit-learn
 ```
 
-## File Structure
-- `FMNIST.ipynb`: Jupyter Notebook containing data preprocessing, model building, training, evaluation, and visualization.
+## Preprocessing
+Each notebook includes the following preprocessing steps:
+- **Data Loading**: Load datasets using Pandas or TensorFlow utilities.
+- **Data Cleaning**: Handle missing values, duplicates, and outliers.
+- **Feature Scaling**: Normalize or standardize numerical features.
+- **Encoding**: Convert categorical variables into numerical representations.
+- **Splitting Data**: Divide datasets into training and testing sets.
+- **Data Augmentation (if applicable)**: Enhance dataset quality for better generalization.
 
-## Implementation Details
-1. **Data Loading**: Loads the Fashion MNIST dataset.
-2. **Preprocessing**: Normalizes the image data for better model performance.
-3. **Model Architecture**:
-   - Convolutional Neural Network (CNN) using TensorFlow/Keras.
-   - Optimized using categorical cross-entropy loss and Adam optimizer.
-4. **Training Process**:
-   - Splits the dataset into training and validation sets.
-   - Uses batch training with backpropagation.
-   - Monitors training loss and validation accuracy.
-   - Applies early stopping or learning rate adjustments if necessary.
-5. **Evaluation Process**:
-   - Tests the model on unseen test data.
-   - Computes accuracy, precision, recall, and F1-score.
-   - Generates a confusion matrix for class-wise performance analysis.
-6. **Visualization**: Displays training progress and predictions.
+## Validation
+Each model is validated using the following techniques:
+- **Train-Test Split**: Data is divided into training and test sets (e.g., 80-20 split).
+- **Cross-Validation**: K-Fold cross-validation is used where applicable.
+- **Evaluation Metrics**: Models are assessed using accuracy, precision, recall, F1-score (for classification), and RMSE/MSE (for regression).
+- **Early Stopping**: Prevents overfitting by monitoring validation loss during training.
+- **Hyperparameter Tuning**: Grid search or random search is used to optimize model performance.
 
-## Usage
-To run the notebook, open a terminal and execute:
+## How to Use
+- Open the respective Jupyter notebook (`.ipynb`).
+- Run each cell sequentially to execute data preprocessing, training, and evaluation.
+- Modify hyperparameters and architectures to experiment with different results.
 
-```bash
-jupyter notebook FMNIST.ipynb
-```
+## Expected Results
+- **House Price Model:** Predicts house prices with neural networks.
+- **Superstore Sales Model:** Analyzes sales patterns and future trends.
+- **Multi-class & Binary Classification:** Classifies data accurately using deep learning models.
 
-## Results
-- Model achieves an accuracy of ~XX% (update after execution).
-- Performance metrics and confusion matrix included in the notebook.
-
-## Contributing
-Feel free to fork this repository, submit pull requests, or report issues for improvements.
-
-## License
-This project is licensed under the MIT License.
-
+## References
+- [TensorFlow Documentation](https://www.tensorflow.org/)
+- [Scikit-Learn Documentation](https://scikit-learn.org/stable/)
